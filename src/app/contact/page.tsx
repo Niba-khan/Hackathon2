@@ -1,5 +1,6 @@
+'use client'
 import Image from "next/image"
-import Navbar2 from "../components/Navbar2"
+import Navbar2 from "../components/navbars"
 import { FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";

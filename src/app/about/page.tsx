@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { FaDribbble, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import Footer from "../components/footer";
-import Navbar2 from "../components/navbar2";
+import Navbars from "../components/navbars";
+
 
 export default function About() {
   return (
     <div>
-     <Navbar2/>
+     <Navbars/>
       <div className="flex flex-col sm:flex-row items-center justify-between w-full h-auto py-[112px] gap-[40px] sm:gap-[80px] px-4">
         
         <div className="w-full sm:w-[50%] text-center sm:text-left">

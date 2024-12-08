@@ -1,3 +1,4 @@
+'use client'
 import { IoCallOutline } from "react-icons/io5";
 import { FaRegEnvelope, FaInstagram, FaYoutube, FaTwitter, FaFacebookF } from 'react-icons/fa';
 

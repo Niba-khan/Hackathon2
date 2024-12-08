@@ -1,13 +1,14 @@
+'use client'
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 import Image from "next/image";
 import Footer from "../components/footer";
-import Navbar2 from "../components/navbar2";
+import Navbars from "../components/navbars";
 
 export default function Pricing() {
   return (
     <div>
-      <Navbar2 />
+      <Navbars/>
       <div className="bg-[#FAFAFA] text-center mb-20 py-[50px] gap-[16px] px-4 sm:px-10 lg:px-36">
         <h5 className="text-[16px] text-[#737373] font-[700] pb-8">PRICING</h5>
         <h1 className="text-[#252B42] text-[32px] sm:text-[40px] lg:text-[58px] font-[700]">Simple Pricing</h1>

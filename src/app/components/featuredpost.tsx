@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import { CiAlarmOn } from "react-icons/ci";
 import { FaChartArea } from "react-icons/fa";
