@@ -5,7 +5,7 @@ export default function SpeakerBanner() {
   return (
     <div className="overflow-x-hidden w-screen flex justify-center items-center mb-10">
       <div className="w-full md:w-[92%] md:h-[500px] bg-[#23856D] flex justify-center items-center flex-wrap md:flex-nowrap">
-        {/* Text Section */}
+       
         <div className="mt-10 flex flex-col justify-center items-start px-[16px] md:px-[112px] text-[#FFFFFF] gap-[20px] md:gap-[30px]">
           <h4 className="text-[16px] md:text-[20px] font-[400]">SUMMER 2020</h4>
           <h1 className="mt-10 w-full md:w-[443px] text-[32px] md:text-[58px] font-[700]">
@@ -22,7 +22,6 @@ export default function SpeakerBanner() {
           </div>
         </div>
 
-        {/* Image Section */}
         <div className="mt-10 md:mt-0 w-full md:w-[600px] h-[300px] md:h-[420px] relative">
           <Image
             src="/images/banner.png"

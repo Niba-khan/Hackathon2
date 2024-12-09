@@ -1,71 +1,84 @@
 import Image from "next/image";
 
-export default function EditorsPick() {
+
+export default function Editors() {
   return (
-    <section className="bg-[#FAFAFA] h-auto py-8 relative mx-auto">
-      <div className="text-center mb-8">
-        <h2 className="text-[24px] lg:text-[32px] font-bold">EDITOR,S PICK</h2>
-        <p className="text-gray-500">Problems trying to resolve the conflict between</p>
+    <div className="w-full flex justify-center py-[10px]  bg-[#f5f5f5]">
+      <div className="w-[1050px] h-auto flex flex-col gap-[30px] bg-[#FAFAFA] p-[40px] ">
+        {/* Title Section */}
+        <div className="flex flex-col items-center gap-[10px]">
+          <h3 className="font-Montserrat font-semibold text-[24px] leading-[32px]">
+            EDITORS PICK
+          </h3>
+          <p className="w-[347px] h-auto font-Montserrat font-normal text-[14px] leading-[20px] text-[#737373] text-center">
+            Problems trying to resolve the conflict between
+          </p>
+        </div>
+        {/* Images Section */}
+        <div className="w-full h-[500px] flex gap-[30px]">
+          {/* Men Image */}
+          <div className="relative w-[510px] h-[500px]">
+            <Image
+              src="/images/editorpick1.png"
+              alt="men"
+              width={509}
+              height={500}
+              className="w-full h-full object-cover rounded-md"
+            />
+            <button className="absolute top-[434px] left-[101px] transform -translate-x-1/2 bg-white px-[50px] py-[10px] shadow-md font-Montserrat font-bold text-[#252B42] text-[16px] leading-[24px] hover:bg-gray-100">
+              MEN
+            </button>
+          </div>
+          {/* Women Image */}
+          <div className="relative w-[240px] h-[500px]">
+            <Image
+              src="/images/editorpick2.png"
+              alt="women"
+              width={509}
+              height={500}
+              className="w-full h-full object-cover"
+            />
+            <button className="absolute top-[434px] left-[21px] w-[136px] h-[48px] px-[48px] py-[12px] flex items-center justify-center gap-[10px] bg-white shadow-md">
+              <h2 className="font-Montserrat font-bold text-[16px] leading-[24px] text-[#252B42]">
+                WOMEN
+              </h2>
+            </button>
+          </div>
+          {/* Accessories and Kids */}
+          <div className="w-[240px] h-[500px] flex flex-col gap-[30px]">
+            {/* Accessories Image */}
+            <div className="relative w-[240px] h-[242px]">
+              <Image
+                src="/images/editorpick3.png"
+                alt="div1"
+                width={239}
+                height={242}
+                className="w-full h-full object-cover"
+              />
+              <button className="absolute top-[180px] left-[20px] w-[136px] h-[48px] px-[24px] py-[12px] flex items-center justify-center gap-[10px] bg-white  shadow-md">
+                <h2 className="font-Montserrat font-bold text-[16px] leading-[24px] text-[#252B42]">
+                  ACCESSORIES
+                </h2>
+              </button>
+            </div>
+            {/* Kids Image */}
+            <div className="relative w-[240px] h-[242px]  mb-96">
+              <Image
+                src="/images/editorpick4.png"
+                alt="div2"
+                width={239}
+                height={242}
+                className="w-full h-full object-cover"
+              />
+              <button className="absolute top-[180px] left-[20px] w-[136px] h-[48px] px-[24px] py-[12px] flex items-center justify-center gap-[10px] bg-white  shadow-md">
+                <h2 className="font-Montserrat font-bold text-[16px] leading-[24px] text-[#252B42]">
+                  KIDS
+                </h2>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-
-      {/* Grid Layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full mx-auto relative z-10">
-        {/* Men (Large Image) */}
-        <div className="relative col-span-1 sm:col-span-2 md:col-span-2">
-          <Image
-            src="/images/editorpick1.png"
-            alt="Men"
-            width={510}
-            height={500}
-            className="object-cover w-full h-full"
-          />
-          <div className="absolute w-[170px] h-[48px] bottom-4 left-4 bg-white px-4 py-2 text-black font-bold">
-            Men
-          </div>
-        </div>
-
-        {/* Women */}
-        <div className="relative col-span-1">
-          <Image
-            src="/images/editorpick2.png"
-            alt="Women"
-            width={240}
-            height={500}
-            className="object-cover w-full h-full"
-          />
-          <div className="absolute bottom-4 left-4 bg-white px-4 py-2 text-black font-bold">
-            Women
-          </div>
-        </div>
-
-        {/* Accessories */}
-        <div className="relative col-span-1">
-          <Image
-            src="/images/editorpick3.png"
-            alt="Accessories"
-            width={240}
-            height={242}
-            className="object-cover w-full h-full"
-          />
-          <div className="absolute bottom-4 left-4 bg-white px-4 py-2 text-black font-bold">
-            Accessories
-          </div>
-        </div>
-
-        {/* Kids (Below Accessories) */}
-        <div className="relative col-span-1">
-          <Image
-            src="/images/editorpick4.png"
-            alt="Kids"
-            width={240}
-            height={242}
-            className="object-cover w-full h-full"
-          />
-          <div className="absolute bottom-4 left-4 bg-white px-4 py-2 text-black font-bold">
-            Kids
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   );
 }

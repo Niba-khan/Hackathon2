@@ -1,5 +1,5 @@
 'use client'
-import { IoCallOutline } from "react-icons/io5";
+import { MdCall } from "react-icons/md";
 import { FaRegEnvelope, FaInstagram, FaYoutube, FaTwitter, FaFacebookF } from 'react-icons/fa';
 
 export default function Header() {
@@ -8,7 +8,7 @@ export default function Header() {
       <div className="w-full h-[48px] bg-[#252B42] px-[24px] flex items-center justify-between text-[#FFFFFF] text-center">
         <div className="flex items-center text-[14px] gap-[5px] font-[700] p-[5px]">
 
-          <IoCallOutline />
+        <MdCall />
           <h6 className="">(225) 555-0118</h6>
           
           <FaRegEnvelope className="ml-4" />
@@ -37,10 +37,9 @@ export default function Header() {
         </div>
       </div>
 
-      {/*Mobile Responsive */}
       <div className="lg:hidden w-full h-[48px] bg-[#252B42] px-[24px] flex items-center justify-between text-[#FFFFFF] text-center">
         <div className="flex flex-col items-center text-[12px] gap-[5px] font-[700] p-[5px]">
-          <IoCallOutline />
+          <MdCall />
           <h6 className="">(225) 555-0118</h6>
 
           <FaRegEnvelope className="ml-4" />

@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function ContainerFluide(){
     return(
         <div className="flex flex-col lg:flex-row w-full lg:w-[1439px] h-auto lg:h-[682px] mb-10">
-            {/* Left Section - Image */}
+            
             <div className="mx-auto lg:ml-16">
               <Image
                 src="/images/fluide.png"

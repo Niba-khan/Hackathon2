@@ -19,7 +19,7 @@ export default function Pricing() {
         </nav>
 
         <div className="w-full h-auto flex flex-wrap justify-center mt-12 gap-8">
-          {/* FREE card */}
+         +
           <div className="w-full sm:w-[327px] lg:w-[327px] bg-[#FFFFFF] rounded-lg shadow-lg px-[20px] sm:px-[40px] py-[30px] sm:py-[50px] gap-[35px]">
             <h3 className="text-[20px] sm:text-[24px] font-[700] text-center text-[#252B42] mb-4">FREE</h3>
             <h5 className="text-center text-[#737373] text-[14px] sm:text-[16px] font-[700] mb-4">Organize across all apps by hand</h5>
@@ -54,7 +54,7 @@ export default function Pricing() {
             </div>
           </div>
 
-          {/* STANDARD card */}
+          
           <div className="w-full sm:w-[329px] lg:w-[329px] h-auto bg-[#252B42] text-white rounded-lg shadow-lg p-6">
             <h3 className="text-[20px] sm:text-[24px] font-[700] text-center mb-4 sm:mb-8">STANDARD</h3>
             <h5 className="text-center text-[14px] sm:text-[16px] font-[700] mb-8">Organize across all apps by hand</h5>
@@ -89,7 +89,7 @@ export default function Pricing() {
             </div>
           </div>
 
-          {/* PREMIUM card */}
+         
           <div className="w-full sm:w-[327px] lg:w-[327px] bg-[#FFFFFF] text-[#FFFFFF] rounded-lg shadow-lg p-6">
             <h3 className="text-[20px] sm:text-[24px] font-[700] text-center text-[#252B42] mb-4 sm:mb-8">PREMIUM</h3>
             <h5 className="text-center text-[#737373] text-[14px] sm:text-[16px] font-[700] mb-8">Organize across all apps by hand</h5>

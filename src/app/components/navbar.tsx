@@ -6,16 +6,15 @@ import { FaSearch } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { CgShoppingCart } from "react-icons/cg";
 import { MdPersonOutline } from "react-icons/md";
-import { GiHamburgerMenu } from "react-icons/gi"; // Hamburger icon for mobile
+import { GiHamburgerMenu } from "react-icons/gi"; 
 
 export default function Navbar() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State to control mobile menu visibility
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); 
 
   return (
     <div className="container w-full max-w-[1437px] h-[58px] top-[70px] p-4 flex justify-between items-center mb-10">
       <h3 className="font-[700] text-[24px] pl-6">Bandage</h3>
 
-      {/* Hamburger Icon for Mobile */}
       <div className="lg:hidden flex items-center">
         <GiHamburgerMenu
           className="text-[24px] cursor-pointer"
@@ -23,7 +22,7 @@ export default function Navbar() {
         />
       </div>
 
-      {/* Desktop Navbar */}
+     
       <div className="hidden lg:flex justify-center items-center pr-[10rem] p-4 text-[#737373] text-[14px] font-[700] gap-[16px] top-[16px]">
         <Link href="/" className="text-[#737373]">
           Home
@@ -48,7 +47,6 @@ export default function Navbar() {
         </Link>
       </div>
 
-      {/* Mobile Menu - Conditionally rendered based on isMobileMenuOpen */}
       <div
         className={`lg:hidden absolute top-[70px] left-0 w-full bg-black/50 p-4 shadow-lg ${
           isMobileMenuOpen ? "block" : "hidden"
@@ -79,7 +77,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Right-side icons (for mobile and desktop) */}
       <div className="flex items-end justify-end gap-[15px] text-[#23A6F0]">
         <MdPersonOutline className="ml-7 text-[24px]" />
         <Link href="#" className="text-[14px] font-[700] text-center">

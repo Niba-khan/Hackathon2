@@ -1,11 +1,9 @@
 'use client'
 import Image from "next/image";
-import { CiAlarmOn } from "react-icons/ci";
-import { FaChartArea } from "react-icons/fa";
-import { IoIosArrowForward } from "react-icons/io";
+import { FaClock,  FaComments  } from "react-icons/fa"; 
 
 const FeaturedPosts = () => {
-  // Array of card data
+
   const cardData = [
     {
       id: 1,
@@ -41,7 +39,7 @@ const FeaturedPosts = () => {
 
   return (
     <div className="w-full md:w-[1050px] mx-auto py-[60px] md:py-[112px]">
-      {/* Centered Text Section */}
+   
       <div className="flex flex-col justify-center items-center text-center mb-12">
         <h6 className="text-[#23A6F0] text-[14px] font-[700]">Practice Advice</h6>
         <h2 className="text-[#252B42] text-[30px] md:text-[40px] font-[700]">
@@ -53,14 +51,14 @@ const FeaturedPosts = () => {
         </p>
       </div>
 
-      {/* Grid Section for Cards */}
+      
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
         {cardData.map((card) => (
           <div
             key={card.id}
             className="bg-white shadow-md rounded-lg overflow-hidden"
           >
-            {/* Image Section */}
+         
             <div className="relative">
               <Image
                 src={card.image}
@@ -73,7 +71,7 @@ const FeaturedPosts = () => {
                 NEW
               </div>
             </div>
-            {/* Text Section */}
+         
             <div className="p-4">
               <div className="flex gap-2 mb-2 text-xs text-gray-500">
                 {card.tags.map((tag, index) => (
@@ -86,20 +84,19 @@ const FeaturedPosts = () => {
               <p className="text-xs md:text-sm text-gray-600 mb-4">
                 {card.description}
               </p>
-              {/* Footer Section */}
+           
               <div className="flex justify-between items-center text-xs md:text-sm text-gray-400">
                 <div className="flex items-center gap-1">
-                  <CiAlarmOn color="#23A6F0" />
+                  <FaClock color="#23A6F0" /> 
                   <span>{card.date}</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  <FaChartArea color="#23856D" />
+                  <FaComments color="#23856D" /> 
                   <span>{card.comments}</span>
                 </div>
               </div>
               <div className="mt-4 text-[#23A6F0] font-bold text-sm flex items-center gap-1">
                 Learn More
-                <IoIosArrowForward />
               </div>
             </div>
           </div>

@@ -10,9 +10,9 @@ export default function Contact() {
   return (
     <div>
       <Navbar2 />
-      <div className="flex flex-col lg:flex-row items-center justify-between w-full h-auto py-[112px] gap-[80px] px-4">
+      <div className="flex flex-col lg:flex-row items-center justify-between w-[1050] h-auto py-[112px] gap-[80px] px-4">
         
-        <div className="lg:w-[50%] w-full pl-0 lg:pl-40">
+        <div className="lg:w-[985] w-full pl-0 lg:pl-40">
           <h5 className="text-[16px] font-[700] text-[#252B42] mb-4">CONTACT US</h5>
           <h1 className="text-[32px] lg:text-[58px] font-[700] mb-4">Get in touch today!</h1>
           <h4 className="text-[#737373] text-[16px] lg:text-[20px] font-[400] w-full lg:w-[376px] mb-8">
