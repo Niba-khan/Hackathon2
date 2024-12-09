@@ -8,7 +8,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/product1.png", // Replace with actual paths
+    image: "/images/product1.png", 
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/product2.png", // Replace with actual paths
+    image: "/images/product2.png", 
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/product3.png", // Replace with actual paths
+    image: "/images/product3.png",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/product4.png", // Replace with actual paths
+    image: "/images/product4.png",
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/product5.png", // Replace with actual paths
+    image: "/images/product5.png", 
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/product6.png", // Replace with actual paths
+    image: "/images/product6.png",
   },
   {
     id: 7,
@@ -108,7 +108,6 @@ export default function BestsellerSection() {
             <h5 className="text-[16px] font-[700] item-center mt-4">{product.title}</h5>
             <p className="text-[14px] font-[700] text-[#737373]">{product.department}</p>
 
-            {/* Pricing */}
             <div className="flex items-center gap-2 mt-2">
               <h5 className="text-[#BDBDBD] line-through">
                 {product.originalPrice}
@@ -118,7 +117,7 @@ export default function BestsellerSection() {
               </h5>
             </div>
 
-            {/* Color Options */}
+        
             <div className="flex justify-center gap-2 mt-2">
               {product.colors.map((color, idx) => (
                 <span

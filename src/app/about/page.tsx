@@ -10,7 +10,7 @@ export default function About() {
      <Navbars/>
       <div className="flex flex-col sm:flex-row items-center justify-between w-full h-auto py-[112px] gap-[40px] sm:gap-[80px] px-4">
         
-        <div className="w-full sm:w-[50%] text-center sm:text-left">
+        <div className="w-full sm:w-[50%] text-center sm:text-left pl-48">
           <h5 className="text-[16px] font-[700] text-[#252B42] mb-4">ABOUT COMPANY</h5>
           <h1 className="text-[32px] sm:text-[58px] font-[700] mb-4">ABOUT US</h1>
           <h4 className="text-[#737373] text-[16px] sm:text-[20px] font-[400] w-full sm:w-[376px] mb-8">
@@ -22,14 +22,15 @@ export default function About() {
         </div>
       
         {/* Image Section */}
-        <div className="w-full sm:w-[50%] flex justify-center sm:justify-end">
-          <Image
+        <div className="w-full sm:w-[50%] flex justify-center sm:justify-end pr-14">
+        <Image
             src="/images/aboutImage.png"
-            alt="About Picture"
-            width={700}
-            height={400}
-            className="rounded object-cover"
-          />
+           alt="About Picture"
+           width={1000}
+           height={800}
+          className="rounded  object-cover 0"
+         />
+
         </div>
       </div>
 
@@ -88,7 +89,6 @@ export default function About() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {/* Team Member 1 */}
           <div className="w-[316px] text-center flex flex-col items-center justify-center">
             <Image
               src="/images/team2.png"

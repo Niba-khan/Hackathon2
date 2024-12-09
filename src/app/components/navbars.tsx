@@ -8,7 +8,7 @@ export default function Navbars(){
   <Link href="/" className="hover:text-blue-700">
           home
         </Link>
-        <Link href="/product" className="hover:text-blue-700">
+        <Link href="/productlist" className="hover:text-blue-700">
          product
         </Link>
         <Link href="/pricing" className="hover:text-blue-700">

@@ -52,7 +52,7 @@ export default function Contact() {
         
         <div className="flex flex-wrap justify-center gap-6 p-4">
           {/* Card 1 */}
-          <div className="w-full sm:w-[327px] bg-[#252B42] p-6 gap-4 rounded-lg">
+          <div className="w-full sm:w-[327px] bg-[#FFFFFF]  p-6 gap-4 rounded-lg">
             <div className="flex flex-col items-center">
               <FaPhoneAlt className="text-[#23A6F0] text-3xl mb-4" />
               <h6 className="text-[24px] font-[700] text-center text-[#252B42] mb-4">georgia.young@ple.com</h6>
@@ -64,10 +64,10 @@ export default function Contact() {
           </div>
 
           {/* Card 2 */}
-          <div className="w-full sm:w-[327px] bg-[#FFFFFF] p-6 gap-4 rounded-lg">
+          <div className="w-full sm:w-[327px] bg-[#252B42] p-6 gap-4 rounded-lg">
             <div className="flex flex-col items-center">
               <FaLocationDot className="text-[#23A6F0] text-3xl mb-4" />
-              <h6 className="text-[24px] font-[700] text-center text-[#252B42] mb-4">georgia.young@ple.com</h6>
+              <h6 className="text-[24px] font-[700] text-center text-[#737373] text-mb-4">georgia.young@ple.com</h6>
               <h5 className="text-center text-[#737373] text-[16px] font-[400] mb-4">Get Support</h5>
               <button className="bg-[#23A6F0] text-white text-[16px] font-[700] px-6 py-2 rounded-lg hover:bg-[#1E8ED0] transition-all duration-300">
                 Learn More
