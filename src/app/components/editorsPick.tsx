@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Editors() {
+export default function EditorsPick() {
   return (
     <div className="w-full flex justify-center py-[10px] bg-[#f5f5f5]">
       <div className="w-full max-w-[1050px] flex flex-col gap-[48px] px-[80px] md:px-[40px] p-[20px]">
