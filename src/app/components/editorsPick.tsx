@@ -4,7 +4,7 @@ export default function Editors() {
   return (
     <div className="w-full flex justify-center py-[10px] bg-[#f5f5f5]">
       <div className="w-full max-w-[1050px] flex flex-col gap-[30px] bg-[#FAFAFA] p-[20px] md:p-[40px]">
-        {/* Title Section */}
+    
         <div className="flex flex-col items-center gap-[10px]">
           <h3 className="font-Montserrat font-semibold text-[20px] md:text-[24px] leading-[28px] md:leading-[32px] text-center">
             EDITORS PICK
@@ -13,9 +13,9 @@ export default function Editors() {
             Problems trying to resolve the conflict between
           </p>
         </div>
-        {/* Images Section */}
+        
         <div className="w-full flex flex-col md:flex-row gap-[20px] md:gap-[30px]">
-          {/* Men Image */}
+        
           <div className="relative w-full md:w-[510px] h-[300px] md:h-[500px]">
             <Image
               src="/images/editorpick1.png"
@@ -28,7 +28,7 @@ export default function Editors() {
               MEN
             </button>
           </div>
-          {/* Women Image */}
+          
           <div className="relative w-full md:w-[240px] h-[300px] md:h-[500px]">
             <Image
               src="/images/editorpick2.png"
@@ -41,9 +41,9 @@ export default function Editors() {
               WOMEN
             </button>
           </div>
-          {/* Accessories and Kids */}
+         
           <div className="w-full md:w-[240px] flex flex-col gap-[20px] md:gap-[30px]">
-            {/* Accessories Image */}
+           
             <div className="relative w-full h-[150px] md:h-[242px]">
               <Image
                 src="/images/editorpick3.png"

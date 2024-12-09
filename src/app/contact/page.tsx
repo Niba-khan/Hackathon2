@@ -51,7 +51,7 @@ export default function Contact() {
         </div>
         
         <div className="flex flex-wrap justify-center gap-6 p-4">
-          {/* Card 1 */}
+
           <div className="w-full sm:w-[327px] bg-[#FFFFFF]  p-6 gap-4 rounded-lg">
             <div className="flex flex-col items-center">
               <FaPhoneAlt className="text-[#23A6F0] text-3xl mb-4" />
@@ -63,7 +63,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Card 2 */}
           <div className="w-full sm:w-[327px] bg-[#252B42] p-6 gap-4 rounded-lg">
             <div className="flex flex-col items-center">
               <FaLocationDot className="text-[#23A6F0] text-3xl mb-4" />
@@ -75,7 +74,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Card 3 */}
+ 
           <div className="w-full sm:w-[327px] bg-[#FFFFFF] rounded-lg shadow-lg p-6 gap-4">
             <div className="flex flex-col items-center">
               <FaEnvelope className="text-[#23A6F0] text-3xl mb-4" />

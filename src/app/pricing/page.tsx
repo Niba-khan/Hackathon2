@@ -21,7 +21,7 @@ export default function Pricing() {
         </nav>
 
         <div className="w-full h-auto flex flex-wrap justify-center mt-12 gap-8">
-          {/* FREE card */}
+         
           <div className="w-full sm:w-[327px] lg:w-[327px] bg-[#FFFFFF] rounded-lg shadow-lg px-[20px] sm:px-[40px] py-[30px] sm:py-[50px] gap-[35px]">
             <h3 className="text-[20px] sm:text-[24px] font-[700] text-center text-[#252B42] mb-4">FREE</h3>
             <h5 className="text-center text-[#737373] text-[14px] sm:text-[16px] font-[700] mb-4">Organize across all apps by hand</h5>
@@ -134,7 +134,7 @@ export default function Pricing() {
     </h4>
     <div className="flex flex-col gap-[30px] px-16 py-10">
       <div className="flex justify-between items-start gap-4">
-        {/* Left Side */}
+        
         <div className="flex items-start gap-4">
           <RiArrowRightWideLine  className="text-[#23A6F0] w-8" />
           <div className="flex flex-col">
@@ -168,7 +168,7 @@ export default function Pricing() {
             </p>
           </div>
         </div>
-        {/* Right Side */}
+        
         <div className="flex items-start gap-4">
           <RiArrowRightWideLine  className="text-[#23A6F0] w-8" />
           <div className="flex flex-col">

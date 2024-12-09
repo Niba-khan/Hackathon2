@@ -8,7 +8,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/editorpick1.png", // Replace with actual paths
+    image: "/images/editorpick1.png", 
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/editorpick2.png", // Replace with actual paths
+    image: "/images/editorpick2.png", 
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/product9.png", // Replace with actual paths
+    image: "/images/product9.png",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/editorPick4.png", // Replace with actual paths
+    image: "/images/editorPick4.png", 
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/product10.png", // Replace with actual paths
+    image: "/images/product10.png", 
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/product11.png", // Replace with actual paths
+    image: "/images/product11.png", 
   },
   {
     id: 7,
@@ -80,7 +80,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/product13.png", // Replace with actual paths
+    image: "/images/product13.png", 
   },
   {
     id: 6,
@@ -89,7 +89,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/product16.png", // Replace with actual paths
+    image: "/images/product16.png",
   },
   {
     id: 7,
@@ -114,7 +114,7 @@ const products = [
 export default function Product() {
   return (
     <div className="max-w-[1124px] mx-auto h-auto p-4 mb-20">
-      {/* Title */}
+ 
       <h4 className="text-center text-[20px] font-[400] text-[#737373] mb-2">
         Featured Products
       </h4>
@@ -144,7 +144,6 @@ export default function Product() {
             <h5 className="text-[16px] font-[700] mt-4">{product.title}</h5>
             <p className="text-[14px] font-[700] text-[#737373]">{product.department}</p>
 
-            {/* Pricing */}
             <div className="flex items-center gap-2 mt-2">
               <h5 className="text-[#BDBDBD] line-through">
                 {product.originalPrice}
@@ -154,7 +153,7 @@ export default function Product() {
               </h5>
             </div>
 
-            {/* Color Options */}
+        
             <div className="flex justify-center gap-2 mt-2">
               {product.colors.map((color, idx) => (
                 <span

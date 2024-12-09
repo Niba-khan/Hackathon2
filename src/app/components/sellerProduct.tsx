@@ -78,7 +78,7 @@ const products = [
 export default function BestsellerSection() {
   return (
     <div className="max-w-[1124px] mx-auto h-[1,652px] p-4 mb-20">
-      {/* Title */}
+     
       <h4 className="text-center text-[20px] font-[400] text-[#737373] mb-2">
         Featured Products
       </h4>
