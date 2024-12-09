@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className="hidden lg:flex justify-center items-center pr-[10rem] p-4 text-[#737373] text-[14px] font-[700] gap-[16px] top-[16px]">
         <Link href="/" className="text-[#737373]">Home</Link>
         <div className="flex items-center gap-1">
-          <Link href="/shop" className="hover:text-blue-700 text-[#252B42] font-[500]">Shop</Link>
+          <Link href="/productlist" className="hover:text-blue-700 text-[#252B42] font-[500]">Shop</Link>
           <RiArrowDownSLine className="text-black" />
         </div>
         <Link href="/about" className="hover:text-blue-700">About</Link>
