@@ -7,18 +7,20 @@ import { CiHeart } from "react-icons/ci";
 import { CgShoppingCart } from "react-icons/cg";
 import { MdPersonOutline } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5"; 
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <div className="container w-full max-w-[1437px] h-[58px] top-[70px] p-4 flex justify-between items-center mb-10">
+
       <h3 className="font-[700] text-[24px] pl-6">Bandage</h3>
 
       <div className="lg:hidden flex items-center">
         <GiHamburgerMenu
           className="text-[24px] cursor-pointer"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          onClick={() => setIsMobileMenuOpen(true)}
         />
       </div>
 
@@ -34,26 +36,31 @@ export default function Navbar() {
         <Link href="/productlist" className="hover:text-blue-700">Pages</Link>
       </div>
 
-  {/*Mobile Menu*/}
-      <div
-        className={`lg:hidden absolute top-[58px] left-0 w-full bg-black/70 p-4 shadow-lg z-50 transition-transform ${
-          isMobileMenuOpen ? "block" : "hidden"
-        }`}
-      >
-        <div className="flex flex-col items-start gap-[16px] text-white">
-          <Link href="/" className="hover:text-blue-500">Home</Link>
-          <div className="flex items-center gap-1">
-            <Link href="/productlistp" className="hover:text-blue-500">Shop</Link>
-            <RiArrowDownSLine />
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="lg:hidden fixed top-0 left-0 w-full h-full bg-black/70 z-50 p-4">
+   
+          <div className="flex justify-end">
+            <IoClose
+              className="text-white text-[30px] cursor-pointer"
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
           </div>
-          <Link href="/about" className="hover:text-blue-500">About</Link>
-          <Link href="/blog" className="hover:text-blue-500">Blog</Link>
-          <Link href="/contact" className="hover:text-blue-500">Contact</Link>
-          <Link href="/productlist" className="hover:text-blue-500">Pages</Link>
+        
+          <div className="flex flex-col items-start gap-[16px] text-white mt-4">
+            <Link href="/" className="hover:text-blue-500">Home</Link>
+            <div className="flex items-center gap-1">
+              <Link href="/shop" className="hover:text-blue-500">Shop</Link>
+              <RiArrowDownSLine />
+            </div>
+            <Link href="/about" className="hover:text-blue-500">About</Link>
+            <Link href="/productlist" className="hover:text-blue-500">Blog</Link>
+            <Link href="/contact" className="hover:text-blue-500">Contact</Link>
+            <Link href="/productlist" className="hover:text-blue-500">Pages</Link>
+          </div>
         </div>
-      </div>
+      )}
 
-     
       <div className="hidden lg:flex items-end justify-end gap-[15px] text-[#23A6F0]">
         <MdPersonOutline className="ml-7 text-[24px]" />
         <Link href="#" className="text-[14px] font-[700] text-center">Login / Register</Link>

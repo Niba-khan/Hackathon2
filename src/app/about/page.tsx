@@ -28,7 +28,7 @@ export default function About() {
            alt="About Picture"
            width={1000}
            height={800}
-          className="rounded  object-cover 0"
+          className="rounded w-[50rem] h-[40rem]"
          />
 
         </div>

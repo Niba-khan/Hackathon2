@@ -8,19 +8,19 @@ export default function Navbars(){
   <Link href="/" className="hover:text-blue-700">
           home
         </Link>
-        <Link href="/productlist" className="hover:text-blue-700">
+        <Link href="/productlist" >
          product
         </Link>
-        <Link href="/pricing" className="hover:text-blue-700">
+        <Link href="/pricing" >
           pricing
         </Link>
-        <Link href="/contact" className="hover:text-blue-700">
+        <Link href="/contact">
           contact
           </Link>
   </nav>
-  <div className="flex gap-[45px]">
+  <div className="flex gap-[21px]">
     <a href="#" className="text-[#23A6F0]">Login</a>
-    <button className="bg-[#23A6F0] text-white px-4 py-2 rounded">Become a member</button>
+    <button className="bg-[#23A6F0] text-[#FFFFFF] px-4 py-2 rounded">Become a member</button>
   </div>
   </div>
 )

@@ -10,7 +10,7 @@ const FeaturedPosts = () => {
       image: "/images/post1.png",
       title: "Loudest à la Madison #1 (L'intégral)",
       description:
-        "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+      "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
       date: "22 April 2021",
       comments: "10 comments",
       tags: ["Google", "Trending", "New"],
@@ -67,25 +67,25 @@ const FeaturedPosts = () => {
                 height={200}
                 className="w-full h-[200px] object-cover"
               />
-              <div className="absolute top-2 left-2 bg-[#FF5A5F] text-white text-xs font-bold py-1 px-2 rounded">
+              <div className="absolute top-2 left-2 bg-[#FF5A5F] text-white text-[14px] font-bold py-1 px-2 rounded">
                 NEW
               </div>
             </div>
          
             <div className="p-4">
-              <div className="flex gap-2 mb-2 text-xs text-gray-500">
+              <div className="flex gap-2 mb-2 text-[12px] text-[#737373]">
                 {card.tags.map((tag, index) => (
                   <span key={index}>{tag}</span>
                 ))}
               </div>
-              <h3 className="text-base md:text-lg text-[#252B42] font-bold mb-2">
+              <h3 className="text-[20px] md:text-lg text-[#252B42] font-[400] mb-2">
                 {card.title}
               </h3>
               <p className="text-xs md:text-sm text-gray-600 mb-4">
                 {card.description}
               </p>
            
-              <div className="flex justify-between items-center text-xs md:text-sm text-gray-400">
+              <div className="flex justify-between items-center text-[12px] md:text-sm text-[#737373]">
                 <div className="flex items-center gap-1">
                   <FaClock color="#23A6F0" /> 
                   <span>{card.date}</span>
@@ -95,9 +95,9 @@ const FeaturedPosts = () => {
                   <span>{card.comments}</span>
                 </div>
               </div>
-              <div className="mt-4 text-[#23A6F0] font-bold text-sm flex items-center gap-1">
+              <h6 className="mt-4 text-[#23A6F0] font-[700] text-[14px] flex items-center gap-1">
                 Learn More
-              </div>
+              </h6>
             </div>
           </div>
         ))}

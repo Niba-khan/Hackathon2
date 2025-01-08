@@ -30,13 +30,13 @@ export default function Contact() {
         </div>
 
         {/* Image Section */}
-        <div className="w-full lg:w-[50%] flex justify-center lg:justify-end pr-0 lg:pr-20 mb-8 lg:mb-0">
+        <div className="w-[1440px] flex justify-center lg:justify-end pr-0 lg:pr-20 mb-8 lg:mb-0">
           <Image
             src="/images/contactImage.png"
             alt="Contact Image"
             width={1400}
             height={853}
-            className="rounded object-cover w-full max-w-[700px] max-h-[500px]"
+            className="rounded object-cover max-w-[700px] max-h-[500px]"
           />
         </div>
       </div>

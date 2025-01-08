@@ -203,11 +203,12 @@ export default function Pricing() {
           </div>
         </div>
       </div>
+      {/*trial*/}
     <div className="w-full flex flex-col items-center py-16 bg-white">
-      <h2 className="text-2xl md:text-3xl font-bold text-[#252B42] text-center mb-4">
+      <h2 className="text-[40px] md:text-[40px] font-[700] text-[#252B42] text-center mb-4">
         Start your 14 days free trial
       </h2>
-      <p className="text-center text-gray-500 text-sm md:text-base mb-6 max-w-md">
+      <p className="text-center text-[#252B42] text-[14px] md:text-base mb-6 max-w-md">
         Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent.
       </p>
       <button className="bg-[#23A6F0] text-white py-3 px-8 rounded-md hover:bg-[#1e91d6] mb-8">
