@@ -43,13 +43,13 @@ export default function Navbar() {
         <div className="flex flex-col items-start gap-[16px] text-white">
           <Link href="/" className="hover:text-blue-500">Home</Link>
           <div className="flex items-center gap-1">
-            <Link href="/shop" className="hover:text-blue-500">Shop</Link>
+            <Link href="/productlistp" className="hover:text-blue-500">Shop</Link>
             <RiArrowDownSLine />
           </div>
           <Link href="/about" className="hover:text-blue-500">About</Link>
           <Link href="/blog" className="hover:text-blue-500">Blog</Link>
           <Link href="/contact" className="hover:text-blue-500">Contact</Link>
-          <Link href="/pages" className="hover:text-blue-500">Pages</Link>
+          <Link href="/productlist" className="hover:text-blue-500">Pages</Link>
         </div>
       </div>
 
