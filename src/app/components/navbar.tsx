@@ -50,7 +50,7 @@ export default function Navbar() {
           <div className="flex flex-col items-start gap-[16px] text-white mt-4">
             <Link href="/" className="hover:text-blue-500">Home</Link>
             <div className="flex items-center gap-1">
-              <Link href="/shop" className="hover:text-blue-500">Shop</Link>
+              <Link href="/productlist" className="hover:text-blue-500">Shop</Link>
               <RiArrowDownSLine />
             </div>
             <Link href="/about" className="hover:text-blue-500">About</Link>
