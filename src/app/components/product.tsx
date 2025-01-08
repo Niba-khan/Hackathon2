@@ -35,7 +35,7 @@ const products = [
     originalPrice: "$16.48",
     discountedPrice: "$6.48",
     colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40] ", "bg-[#252B42]"],
-    image: "/images/editorPick4.png", 
+    image: "/images/editorpick4.png", 
   },
   {
     id: 5,
